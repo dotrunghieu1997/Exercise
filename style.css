@@ -1,0 +1,90 @@
+body {
+    font-family: "Lato", sans-serif;
+  }
+  
+  .sidenav {
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    top: 77px;
+    left: -15px;
+    background-color: whitesmoke;
+    overflow-x: hidden;
+    transition: none;
+  }
+  
+    .sidenav a {
+    padding: 32px 8px 8px 32px;
+    font-size: 30px;
+    color: black;
+    display: block;
+    transition: none;
+  }
+  
+   .sidenav a:hover {
+    color: #2cd8fa;
+    text-decoration: none;
+  } 
+
+   .seconsnav a:hover {
+    color: #2cd8fa;
+    text-decoration: none;
+  }
+
+  .seconsnav {
+    height: 100%;
+    width: 210px;
+    top: 77px;
+    position: fixed;
+    left: 85px;
+    background-color: whitesmoke;
+    display: none;
+  }
+  
+    #k1 {
+    padding: 32px 12px 8px 32px;
+    font-size: 20px;
+    display: block;
+  }
+
+    #k2 {
+    padding: 32px 12px 8px 32px;
+    font-size: 20px;
+    display: block;
+    }
+  
+    .thirdsnav {
+      height: 100%;
+      width: 210px;
+      top: 77px;
+      position: fixed;
+      left: 85px;
+      background-color: whitesmoke;
+      display: none;
+    }
+
+    #l1 {
+      padding: 32px 12px 8px 32px;
+      font-size: 20px;
+      display: block;
+    }
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  .sidenav.push {
+    width: 100px;
+  }
+
+  .main.push {
+    margin-left: 100px;
+  }
+
+  .seconsnav.display {
+    display: block;
+  }
+
+  .thirdsnav.display {
+    display: block;
+  }
