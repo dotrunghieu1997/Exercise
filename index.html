@@ -9,16 +9,17 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <title>Do Trung Hieu</title>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-</head>
+    <script src="Script.js"></script>
+  </head>
 <body>
         <nav class="navbar navbar-light bg-light shadow-lg p-3 mb-0 bg-white rounded">
-                <span style="font-size:30px;cursor:pointer" data-toggle="collapse in" data-target=".sidenav" id="btnshow" >&#9776;</span>
+                <span style="font-size:30px;cursor:pointer" id="btnshow" >&#9776;</span>
                 <i class="far fa-user-circle">Tovarishch</i>
         </nav>
 
         <nav class="sidenav">
-                <a href="#"> <i class="fas fa-window-restore" id="showsenav" data-toggle="collapse" data-target=".seconsnav"></i></a>
-                <a href="#"> <i class="fas fa-network-wired" id="showthnav" data-toggle="collapse" data-target=".thirdsnav"></i></a>
+                <a href="#"> <i class="fas fa-window-restore" id="showthnav" style="font-size:32px;"></i>Dashboard</a>
+                <a href="#"> <i class="fas fa-network-wired" id="showsenav" style="font-size:32px;"></i>List</a>
         </nav>
 
         <nav class="seconsnav shadow-lg">
@@ -30,39 +31,98 @@
             <a  href="#" id="l1"><i class="fas fa-rocket"></i> Default</a>
         </nav>
 
-        <div class="main">Do Trung Hieu</div>
-  <script>
-      $(document).ready(function(){
-        $("#btnshow").click(function(){
-          $(".sidenav").toggleClass('push');
-          $(".main").toggleClass('push');
-        });
-      });
-  </script>
-  <!-- <script>
-  //   $(document).ready(function(){
-  //     $("#showsenav", "#showthnav").on('show.bs.collapse', function() {  
-  //       $("[data-toggle=collapse]").prop('disable',true);
-  //     });
-  //   });
-  // </script> -->
+        <div class="mainscreen">
+          <div class="row">
+            <div class="col-md-4">
+              <div style="font-size: 20px; font-weight: bold;">Member List</div>
+            </div>
+            <div class="col-md-4 offset-md-4">
+                <button class="btncheck" type="submit">&#9634;</button>
+              <button class="btnadd" type="submit">ADD NEW</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+                <a  href="#"><i class="fas fa-list"></i></a>
+                <a  href="#"><i class="fas fa-th-large"></i></a>
+            </div>
+            <div class="col-md-4 offset-md-4">
+            <select class="select-menu">
+              <option value="0">&#9634;</option>
+              <option value="1">5</option>
+              <option value="2">10</option>
+              <option value="3">15</option>
+              <option value="4">20</option>
+            </select>
+                <p>Displaying 1-10 of 210 items</p>
+            </div>
+          </div>
+          <hr>
+        </div>
 
-  <script>
-    $(document).ready(function(){
-      $("#showsenav").click(function(){
-        $(".seconsnav").toggle('display');
-        $(".thirdsnav").hide(".seconsnav");
-      });
-    });
-  </script>
-  <script>
-      $(document).ready(function(){
-        $("#showthnav").click(function(){
-          $(".thirdsnav").toggle('display');
-          $(".seconsnav").hide(".thirdsnav");
-        });
-      });
-    </script>
+        <div class="lowscreen">
+          <div class="row" id="itemdetail">
+            <div class="col">
+                <div class="card" style="width:250px">
+                    <img src="Picture/sm_5b50253a8a151.png">
+                  <div class="card-body">
+                      <h5 class="card-title"><input type="checkbox"> Space </b> </h5>
+                      <p class="card-text">dd.mm.yyyy</p>
+                  </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width:250px">
+                    <img src="Picture/sm_5b50253a8a151.png">
+                  <div class="card-body">
+                      <h5 class="card-title"><input type="checkbox"> Space </b> </h5>
+                      <p class="card-text">dd.mm.yyyy</p>
+                  </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width:250px">
+                    <img src="Picture/sm_5b50253a8a151.png">
+                  <div class="card-body">
+                      <h5 class="card-title"><input type="checkbox"> Space </b> </h5>
+                      <p class="card-text">dd.mm.yyyy</p>
+                  </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width:250px">
+                    <a href="#"><img class="card-img-top" src="Picture/sm_5b50253a8a151.png"> </a>
+                  <div class="card-body">
+                      <h5 class="card-title"><input type="checkbox"> Space </b> </h5>
+                      <p class="card-text">dd.mm.yyyy</p>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="dashboard">
+          <div class="row">
+            <div class="col align-selft-start" style="font-size: 20px; font-weight: bold;">
+              Dashboard
+              <hr>
+            </div>
+          </div>
+          <div class="row">
+              <div class="col-md-4">
+                <nav class="dbmem">
+                    <i class="far fa-user" style="font-size: 30px; color: white"><br>###### Member</i>
+                </nav>
+              </div>
+          </div>
+         <div class="spacer" style="height: 20px"></div>
+          <div class="row">
+              <div class="col-md-4 col-md-offset-4">
+                  <nav class="dbmem">
+                      <i class="far fa-bell" style="font-size: 30px; color: white"><br>###### Course</i>
+                  </nav>
+              </div>
+          </div>
+        </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

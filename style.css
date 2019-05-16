@@ -1,5 +1,5 @@
 body {
-    font-family: "Lato", sans-serif;
+    font-family: "Arial", sans-serif;
   }
   
   .sidenav {
@@ -8,21 +8,22 @@ body {
     position: fixed;
     top: 77px;
     left: -15px;
-    background-color: whitesmoke;
+    background-color: white;
     overflow-x: hidden;
-    transition: none;
+    transition: none !important;
   }
   
     .sidenav a {
     padding: 32px 8px 8px 32px;
-    font-size: 30px;
     color: black;
+    font-size: 14px;
     display: block;
     transition: none;
+    text-align: center;
   }
   
    .sidenav a:hover {
-    color: #2cd8fa;
+    box-shadow: inset 21px -5px 10px -20px #1524ee;
     text-decoration: none;
   } 
 
@@ -31,26 +32,89 @@ body {
     text-decoration: none;
   }
 
+   .mainscreen {
+    padding: 40px 40px 0px 40px;
+    background-color: white;
+  }
+
+  .lowscreen {
+    padding: 40px 40px 0px 40px;
+    background-color:white;
+  }
+  
+  .dashboard {
+    padding: 40px 40px 0px 40px;
+    background-color:white;
+    /* display: none; */
+  }
+
+  .dbmem {
+    padding: 40px 0px 0px 20px;
+    height: 150px;
+    width: 300px;
+    background-color: rgb(22, 70, 228);
+    border-width: thin;
+
+  }
+
+  .btnadd {
+    float: right;
+    font-size: 20px;
+    color: white;
+    background:#1524ee;
+    border-radius: 16px;
+
+  }
+
+  .btncheck {
+    float: right;
+    font-size: 20px;
+    color: white;
+    background:#1524ee;
+    border-radius: 10px;
+  } 
+
+  p{
+    float: right;
+    font-size: 12px;
+  }
+
+  .card-text {
+    float: left;
+  }
+  .select-menu {
+    position: relative;
+    float: right;
+    border-radius: 16px;
+    text-align: center;
+    font-size: 12px;
+    
+  }
+
   .seconsnav {
     height: 100%;
     width: 210px;
     top: 77px;
     position: fixed;
     left: 85px;
-    background-color: whitesmoke;
+    background-color: white;
     display: none;
+    z-index: 1;
+    transition: none !important;
   }
   
     #k1 {
     padding: 32px 12px 8px 32px;
     font-size: 20px;
     display: block;
+    transition: none !important;
   }
 
     #k2 {
     padding: 32px 12px 8px 32px;
     font-size: 20px;
     display: block;
+    transition: none !important;
     }
   
     .thirdsnav {
@@ -59,28 +123,47 @@ body {
       top: 77px;
       position: fixed;
       left: 85px;
-      background-color: whitesmoke;
+      background-color: white;
       display: none;
+      z-index: 1;
+      transition: none !important;
     }
+
 
     #l1 {
       padding: 32px 12px 8px 32px;
       font-size: 20px;
       display: block;
+      text-decoration: none;
+      transition: none !important;
     }
+
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
 
+  .card {
+    border-style: double;
+    border-radius: 16px;
+    border: black;
+    border-width: thin;
+  }
   .sidenav.push {
     width: 100px;
   }
 
-  .main.push {
-    margin-left: 100px;
+  .mainscreen.push {
+    margin-left: 113px;
   }
 
+  .lowscreen.push {
+    margin-left: 113px;
+  }
+
+  .dashboard.push {
+    margin-left: 113px;
+  }
   .seconsnav.display {
     display: block;
   }
